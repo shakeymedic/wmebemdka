@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An In-Depth Guide to DKA for UK Emergency Clinicians</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #1e293b;
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 700;
+        }
+        .section-icon {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.75rem;
+        }
+        .flowchart-arrow {
+            font-size: 2rem;
+            color: #94a3b8;
+            text-align: center;
+            margin: 0.5rem 0;
+        }
+        .treatment-step {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .step-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            color: white;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-8">
+
+    <div class="max-w-5xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <div class="flex justify-center items-center">
+                <img src="https://i.imgur.com/09eFLTO.png" alt="WMEBEM Logo" class="logo">
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-red-600">A Deep Dive into Diabetic Ketoacidosis (DKA)</h1>
+            <p class="text-lg text-slate-600 mt-2">Pathophysiology and Management for UK Emergency Clinicians</p>
+        </header>
+
+        <!-- Pathophysiology Section -->
+        <div class="card p-6 md:p-8">
+            <div class="flex items-center mb-4">
+                <svg class="section-icon text-slate-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" /></svg>
+                <h2 class="text-2xl font-bold text-slate-800">The Pathophysiology of DKA: A Vicious Cycle</h2>
+            </div>
+            <p class="mb-6 text-slate-600">DKA is driven by a state of absolute or relative insulin deficiency, coupled with an excess of counter-regulatory hormones (like glucagon, cortisol, and catecholamines). This hormonal imbalance triggers three core pathological processes.</p>
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <!-- Hyperglycaemia -->
+                <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">1. Hyperglycaemia</h3>
+                    <p class="text-sm text-blue-700">Insulin deficiency impairs glucose uptake by cells and promotes uncontrolled glucose production by the liver (gluconeogenesis) and breakdown of glycogen (glycogenolysis).</p>
+                    <div class="flowchart-arrow">↓</div>
+                    <h4 class="font-semibold text-md text-blue-800">Osmotic Diuresis</h4>
+                    <p class="text-sm text-blue-700">High blood glucose overwhelms the kidneys' ability to reabsorb it, leading to glucose in the urine (glycosuria). Water follows the glucose, causing profound dehydration and loss of electrolytes (Na⁺, K⁺, PO₄³⁻).</p>
+                </div>
+                <!-- Ketogenesis -->
+                <div class="p-4 bg-orange-50 rounded-lg border border-orange-200">
+                    <h3 class="font-semibold text-lg text-orange-800 mb-2">2. Ketogenesis</h3>
+                    <p class="text-sm text-orange-700">The body, starved of glucose for fuel, switches to breaking down fat (lipolysis). The liver metabolises these free fatty acids into acidic ketone bodies (beta-hydroxybutyrate and acetoacetate).</p>
+                    <div class="flowchart-arrow">↓</div>
+                    <h4 class="font-semibold text-md text-orange-800">Metabolic Acidosis</h4>
+                    <p class="text-sm text-orange-700">These ketones overwhelm the body's buffering capacity, leading to a high anion gap metabolic acidosis. The body attempts to compensate by deep, rapid breathing (Kussmaul's respiration) to blow off CO₂.</p>
+                </div>
+                <!-- Vicious Cycle -->
+                <div class="p-4 bg-red-50 rounded-lg border border-red-200">
+                    <h3 class="font-semibold text-lg text-red-800 mb-2">3. The Vicious Cycle</h3>
+                    <p class="text-sm text-red-700">Dehydration leads to poor tissue perfusion and renal impairment, worsening the acidosis. The acidosis itself impairs insulin function and exacerbates dehydration by causing vomiting.</p>
+                     <div class="flowchart-arrow">↓</div>
+                    <h4 class="font-semibold text-md text-red-800">Worsening State</h4>
+                    <p class="text-sm text-red-700">This cycle of dehydration, acidosis, and electrolyte disturbance continues, leading to cardiovascular collapse, altered consciousness, and potentially death if untreated.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assessment & Diagnosis -->
+        <div class="card p-6 md:p-8">
+            <div class="flex items-center mb-4">
+                <svg class="section-icon text-slate-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m-3.75-6v6m-3.75-6v6M3 16.5v-1.5a3.375 3.375 0 013.375-3.375h1.5A1.125 1.125 0 009 12.875v1.5m-6.75 4.5h18" /></svg>
+                <h2 class="text-2xl font-bold text-slate-800">Diagnosis and Severity Assessment</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-3">Diagnostic Triad (UK Criteria)</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start p-3 bg-slate-50 rounded-lg"><strong class="text-red-600 font-bold mr-2">1.</strong> <div><strong>Hyperglycaemia:</strong> Capillary blood glucose >11.0 mmol/L or known diabetes mellitus.</div></li>
+                        <li class="flex items-start p-3 bg-slate-50 rounded-lg"><strong class="text-red-600 font-bold mr-2">2.</strong> <div><strong>Ketonaemia:</strong> Capillary blood ketones >3.0 mmol/L or significant urinary ketones (++ or more).</div></li>
+                        <li class="flex items-start p-3 bg-slate-50 rounded-lg"><strong class="text-red-600 font-bold mr-2">3.</strong> <div><strong>Acidosis:</strong> Bicarbonate <15.0 mmol/L and/or venous pH <7.3.</div></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-3">Assessing Severity</h3>
+                    <p class="text-slate-600 mb-3">Determines patient disposition (ward vs HDU/ICU). Any ONE of the following indicates severe DKA:</p>
+                     <ul class="space-y-3">
+                        <li class="flex items-start p-3 bg-red-100 border border-red-200 rounded-lg"><div><strong>Biochemical:</strong> Venous pH <7.1, Bicarbonate <5.0 mmol/L, Potassium <3.5 mmol/L, Anion Gap >16.</div></li>
+                        <li class="flex items-start p-3 bg-red-100 border border-red-200 rounded-lg"><div><strong>Clinical:</strong> GCS <12, Systolic BP <90 mmHg, Heart Rate >100 or <60 bpm, Oxygen Sats <92% on air.</div></li>
+                    </ul>
+                </div>
+            </div>
+             <div class="mt-6 p-4 bg-orange-100 border-l-4 border-orange-500 text-orange-700">
+                <h4 class="font-bold">Clinical Pearl: Euglycaemic DKA (eDKA)</h4>
+                <p>Be aware that patients on SGLT-2 inhibitors (the "-gliflozins") can develop DKA with normal or only mildly elevated blood glucose. Any unwell patient on these drugs requires a capillary ketone measurement, regardless of their BM.</p>
+            </div>
+        </div>
+
+        <!-- Treatment Section -->
+        <div class="card p-6 md:p-8">
+             <div class="flex items-center mb-6">
+                <svg class="section-icon text-slate-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg>
+                <h2 class="text-2xl font-bold text-slate-800">ED Management: A Step-by-Step Approach</h2>
+            </div>
+
+            <!-- Step 1: Fluids -->
+            <div class="treatment-step bg-blue-50 border-l-4 border-blue-500">
+                <div class="step-number bg-blue-500">1</div>
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800">Fluid Resuscitation</h3>
+                    <p class="text-blue-900">The first and most critical step. Start with **0.9% Sodium Chloride**. A typical adult requires 5-8 litres in the first 24 hours.</p>
+                    <ul class="list-disc list-inside mt-2 text-blue-900">
+                        <li><strong>Initial Bolus:</strong> 1000ml 0.9% Saline over 1 hour.</li>
+                        <li><strong>Subsequent fluids:</strong> 1000ml over 2 hours, then 1000ml over 4 hours, then 1000ml over 6 hours. Adjust based on clinical assessment and U&Es.</li>
+                         <li>Once blood glucose is **<14 mmol/L**, switch to **10% Dextrose** at ~125ml/hr (alongside the saline) to prevent hypoglycaemia while the insulin infusion continues to suppress ketogenesis.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 2: Insulin -->
+            <div class="treatment-step bg-orange-50 border-l-4 border-orange-500">
+                <div class="step-number bg-orange-500">2</div>
+                 <div>
+                    <h3 class="text-xl font-semibold text-orange-800">Insulin Therapy</h3>
+                    <p class="text-orange-900">Start a **Fixed Rate Intravenous Insulin Infusion (FRII)** 1 hour after starting fluids. Use a weight-based calculation.</p>
+                    <ul class="list-disc list-inside mt-2 text-orange-900">
+                        <li><strong>Dose:</strong> 0.1 units per kg per hour (e.g., 7 units/hr for a 70kg patient).</li>
+                        <li><strong class="text-red-600">DO NOT</strong> give an initial IV bolus of insulin.</li>
+                        <li><strong class="text-red-600">DO NOT</strong> stop the patient's long-acting background insulin (e.g., Lantus, Levemir).</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 3: Potassium -->
+            <div class="treatment-step bg-purple-50 border-l-4 border-purple-500">
+                <div class="step-number bg-purple-500">3</div>
+                 <div>
+                    <h3 class="text-xl font-semibold text-purple-800">Potassium Replacement</h3>
+                    <p class="text-purple-900">Patients in DKA have a total body potassium deficit, even if serum levels are initially normal or high. Insulin drives potassium into cells, causing levels to fall rapidly.</p>
+                     <ul class="list-disc list-inside mt-2 text-purple-900">
+                        <li><strong>If K⁺ >5.5 mmol/L:</strong> Do not add potassium initially, but recheck frequently.</li>
+                        <li><strong>If K⁺ 3.5-5.5 mmol/L:</strong> Add 40mmol KCl to each 1000ml bag of fluid.</li>
+                        <li><strong>If K⁺ <3.5 mmol/L:</strong> Requires senior review and more aggressive replacement, potentially delaying insulin infusion.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 4: Monitoring -->
+            <div class="treatment-step bg-gray-100 border-l-4 border-gray-500">
+                <div class="step-number bg-gray-500">4</div>
+                 <div>
+                    <h3 class="text-xl font-semibold text-gray-800">Monitoring & Goals</h3>
+                    <p class="text-gray-900">Close monitoring is essential to guide therapy and avoid complications.</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-900">
+                        <li><strong>Hourly:</strong> Capillary glucose and ketones.</li>
+                        <li><strong>1-2 Hourly:</strong> Venous blood gas (for pH, bicarb, K⁺).</li>
+                        <li><strong>4-6 Hourly:</strong> Full U&Es.</li>
+                        <li><strong>Goals of Treatment:</strong>
+                            <ul class="list-disc list-inside ml-4">
+                                <li>Reduce ketones by ≥0.5 mmol/L/hr.</li>
+                                <li>Increase bicarbonate by ≥3.0 mmol/L/hr.</li>
+                                <li>Reduce capillary glucose by ~3.0 mmol/L/hr.</li>
+                                <li>Maintain potassium in range 4.0-5.5 mmol/L.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-8 text-sm text-slate-500 space-y-2">
+            <p>This infographic is intended as an educational aid and does not replace local trust guidelines or clinical judgement. Always consult your local protocols for the management of ketoacidosis.</p>
+            <p>Guidance based on the <a href="https://www.diabetes.org.uk/professionals/position-statements-reports/joint-british-diabetes-societies-for-inpatient-care-group/the-management-of-diabetic-ketoacidosis-in-adults" target="_blank" rel="noopener noreferrer" class="underline hover:text-blue-600">Joint British Diabetes Societies (JBDS) Guideline</a>.</p>
+            <p>Created by Dr Jake Turner for West Midlands Evidence Based Emergency Medicine Ltd.</p>
+            <div>
+                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license" class="underline hover:text-blue-600">
+                    This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+                </a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
+
